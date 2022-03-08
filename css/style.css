@@ -2,6 +2,7 @@
     --background-default:#111;
     --background-transition:#000;
     --background-alternative: #333;
+    --background-alternative-black: #222;
     --letter-default: #eee;
 
 }
@@ -173,3 +174,36 @@ div#items div.item{
     flex-direction: column;
     font-size: 1.2rem;
 }
+
+div#testimonies{
+    width: 100%;
+    background: var(--background-alternative-black);
+    color: var(--letter-default);
+    padding: 50px;
+}
+
+div#testimonies-container{
+    width: 80%;
+    margin: auto;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+
+div.testimonial{
+    display:flex;
+    align-items: center;
+    font-size: 1.2rem;
+    background: var(--background-alternative);
+    padding: 15px;
+    margin: 15px 0;
+    border-radius: 5px;
+}
+
+img.testimonial-image{
+    height: 200px;
+    width: auto;
+    border-radius: 50%;
+    margin: 15px;
+}
+
