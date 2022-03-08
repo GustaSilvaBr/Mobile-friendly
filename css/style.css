@@ -1,7 +1,9 @@
 :root{
     --background-default:#111;
     --background-transition:#000;
+    --background-alternative: #333;
     --letter-default: #eee;
+
 }
 
 *{
@@ -110,11 +112,64 @@ h1.logo{
     padding: 50px;
 }
 
-.client-logo{
-    display: inline-block;
-    width: 25%;
+#clients-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-items: center;
+    padding: 15px;
 }
 
+.client-logo{
+    display: inline-block;
+    width: 30%;
+}
 
+#features{
+    background: var(--background-default);
+    color: var(--letter-default);
+    width: 100%;
+    padding: 50px;
+}
 
+#features-container{
+    width: 100%;
+    margin: auto;
+    display:grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-column-gap: 50px;
+}
 
+.feature{
+    display: flex;
+    flex-direction: column;
+    background: var(--background-alternative);
+    padding: 20px;
+    border-radius: 5px;
+}
+
+span.feature-title{
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+section#product{
+    width: 100%;
+    padding: 50px;
+}
+
+div#product-container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+div#items{
+    width: 650px;
+}
+
+div#items div.item{
+    display:flex;
+    padding: 10px;
+    margin: 15px 0;
+    flex-direction: column;
+    font-size: 1.2rem;
+}
