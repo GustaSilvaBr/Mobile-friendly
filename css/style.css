@@ -19,6 +19,7 @@ body{
 
 a{
     text-decoration: none;
+    color: inherit;/*Get father's color*/
 }
 
 .btn{
@@ -51,6 +52,7 @@ a{
     height: 80px;
     background: var(--background-default);
     color: var(--letter-default);
+    position: fixed;
 }
 
 #navbar-container{
@@ -74,14 +76,15 @@ h1.logo{
     text-transform: uppercase;
 }
 
-#navbar-items li{
+ul#navbar-items li{
     padding: 10px;
 }
+
 
 /* showcase */
 
 #showcase{
-    height: 95vh;
+    height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -207,3 +210,29 @@ img.testimonial-image{
     margin: 15px;
 }
 
+section#gallery{
+    width:100%;
+    margin: auto;
+    padding: 50px;
+}
+
+div#gallery-container{
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 30px;
+    justify-items: center;
+}
+
+img.gallery-image{
+    display: inline-block;
+    width: 400px;
+    height: 220px;
+    border-radius: 5px;
+}
+
+footer#footer{
+    background: var(--background-alternative-black);
+    color: var(--letter-default);
+    padding: 30px;
+    text-align: center;
+}
