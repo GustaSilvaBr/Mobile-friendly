@@ -146,9 +146,12 @@ ul#navbar-items li{
 .feature{
     display: flex;
     flex-direction: column;
+    justify-content: space-between;
     background: var(--background-alternative);
     padding: 20px;
     border-radius: 5px;
+
+    height: 280px;
 }
 
 span.feature-title{
